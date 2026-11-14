@@ -11,13 +11,11 @@ Ask "which customers owe us money, and what did we last tell them?" and your age
 > [!IMPORTANT]
 > **You need a Mojobase account.** Mojobase is invite-only for now: [request a founding spot](https://mojobase.ai/signup?utm_source=github&utm_campaign=mcp-listing).
 
-| | |
-|---|---|
-| Address for claude.ai and ChatGPT | `https://app.mojobase.ai/mcp/<your company>`, shown in Mojobase under Settings → Connect an agent |
-| Address for a key | `https://app.mojobase.ai/mcp` |
-| Transport | Streamable HTTP |
-| Sign-in | Your Mojobase account, or a key sent as a Bearer token |
-| Price | Included in every Mojobase plan. Agents never take a seat |
+- **Address for claude.ai and ChatGPT:** `https://app.mojobase.ai/mcp/<your company>`, shown in Mojobase under Settings → Connect an agent
+- **Address for a key:** `https://app.mojobase.ai/mcp`
+- **Transport:** Streamable HTTP
+- **Sign-in:** your Mojobase account, or a key sent as a Bearer token
+- **Price:** included in every Mojobase plan, and agents never take a seat
 
 ## Who it's for
 
