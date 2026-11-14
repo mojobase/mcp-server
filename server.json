@@ -1,0 +1,53 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "ai.mojobase/mojobase",
+  "title": "Mojobase",
+  "description": "One MCP server for your whole business: email, chat, calendar, tasks, files, customers and numbers.",
+  "version": "1.0.0",
+  "websiteUrl": "https://mojobase.ai/mcp?utm_source=mcp-registry&utm_campaign=mcp-listing",
+  "repository": {
+    "url": "https://github.com/mojobase/mcp-server",
+    "source": "github"
+  },
+  "icons": [
+    {
+      "src": "https://mojobase.ai/favicon.svg",
+      "mimeType": "image/svg+xml",
+      "sizes": [
+        "any"
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.mojobase.ai/mcp/{company}",
+      "variables": {
+        "company": {
+          "description": "Your company's id, the end of its address in Mojobase: Settings → Connect an agent. You sign in with your Mojobase account when you connect.",
+          "isRequired": true
+        }
+      }
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://app.mojobase.ai/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "A key you make in Mojobase: Settings → Connect an agent.",
+          "isRequired": true,
+          "isSecret": true,
+          "value": "Bearer {key}",
+          "variables": {
+            "key": {
+              "description": "Your Mojobase key",
+              "isRequired": true,
+              "isSecret": true
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
