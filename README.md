@@ -77,40 +77,43 @@ Use `https://app.mojobase.ai/mcp` over Streamable HTTP with the header `Authoriz
 
 ## What your agent can do
 
-More than 120 tools, by app. An app you can't open, or one that's off for your company, doesn't show up.
+More than 115 tools, by app. An app you can't open, or one that's off for your company, doesn't show up.
 
-**Email.** Search and read every mailbox you can see, attachments included. Write, revise and schedule drafts. Archive, move, delete or mark mail as spam once you switch each on in Email Settings. Connect a Gmail or Outlook mailbox with a link for its owner.
-`mail_accounts` `mail_status` `mail_sync` `mail_list` `mail_search` `mail_read` `mail_thread` `mail_attachments` `mail_attachment_text` `thread_watch` `mail_archive` `mail_mark_read` `mail_delete` `mail_spam` `mail_block` `mail_move` `draft_reply` `draft_forward` `draft_new` `draft_revise` `draft_edit` `draft_schedule` `draft_unschedule` `draft_scheduled` `draft_list` `draft_read` `draft_preview` `draft_send_test` `google_connect_link` `microsoft_connect_link`
+**Email.** Search and read every mailbox you can see, attachments included. Write, revise and schedule drafts, put files on them and discard them. Sort conversations and set follow-ups. Archive, move, delete or mark mail as spam, and block or unblock senders, once you switch each on in Email Settings. Connect a Gmail or Outlook mailbox with a link for its owner.
+`mail_accounts` `mail_sync` `mail_list` `mail_read` `mail_attachments` `thread_watch` `mail_label` `mail_tidy` `draft_new` `draft_revise` `draft_edit` `draft_attach` `draft_discard` `draft_schedule` `draft_list` `draft_send_test` `mail_connect_link`
 
-**Team chat.** Read and search the conversations you're in, see what's waiting on you, post, reply, react and message a teammate.
-`chat_conversations` `chat_read` `chat_thread` `chat_search` `chat_needs_you` `chat_people` `chat_post` `chat_dm` `chat_react`
+**Team chat.** Read and search the conversations you're in, see what's waiting on you, post with files, reply, react and message a teammate. Edit or delete what your agent posted, make channels, and join open ones or add teammates to them. It never posts where a guest is.
+`chat_conversations` `chat_read` `chat_search` `chat_needs_you` `chat_people` `chat_post` `chat_dm` `chat_react` `chat_edit` `chat_delete` `chat_channel_save` `chat_join` `chat_channel_add_people`
 
-**Calendar.** List events, find good free times, add and change your own events, hold times you've offered, and read bookings and meeting notes. Teammates show as busy times only. A change with guests waits for your Approve.
-`calendar_settings` `calendar_list` `calendar_event` `calendar_free_busy` `calendar_find_times` `calendar_team` `calendar_team_busy` `calendar_create` `calendar_change` `calendar_delete` `calendar_hold` `calendar_release_holds` `calendar_proposals` `calendar_bookings` `calendar_notes` `calendar_activity`
+**Calendar.** List events, find good free times, add and change your own events, hold times you've offered, and read bookings. Make calendars and booking links, and write your meeting notes. A new booking link stays off until you switch it on. Teammates show as busy times only. A change with guests waits for your Approve.
+`calendar_settings` `calendar_list` `calendar_find_times` `calendar_team` `calendar_save` `calendar_hold` `calendar_proposals` `calendar_bookings` `calendar_booking_links` `calendar_booking_link_save` `calendar_calendar_save` `calendar_notes` `calendar_note_save` `calendar_activity`
 
-**Tasks.** List, add, update, complete and comment on tasks across your projects. Deleting a task always waits for your OK.
-`tasks_list` `task_get` `projects_list` `people_list` `task_quick_add` `task_add` `task_update` `task_complete` `task_comment` `task_delete` `suggestions_list` `task_history`
+**Tasks.** List, add, update, complete, reopen and comment on tasks across your projects, and set your own reminders. Make and change projects and sections. Deleting a task, and sharing or deleting a project, always wait for your OK.
+`tasks_list` `projects_list` `people_list` `task_add` `task_update` `task_complete` `task_comment` `task_remind` `task_delete` `task_history` `suggestions_list` `project_save` `section_save` `project_share` `project_delete`
 
-**Files.** Search inside files and documents and read them. Suggest new documents and folders, edits, moves, renames and trash, which you accept unless that kind of change is on Auto.
-`docs_search` `docs_list` `docs_spaces` `docs_read` `doc_create` `folder_create` `doc_propose_edit` `items_propose_move` `item_propose_rename` `items_propose_trash` `proposal_status` `docs_ai_settings`
+**Files.** Search inside files and documents and read them. Suggest new documents, files and folders, edits, moves, renames, trash and putting things back from the trash, which you accept unless that kind of change is on Auto.
+`docs_search` `docs_list` `docs_spaces` `docs_read` `doc_create` `doc_propose_edit` `items_propose_move` `items_propose_trash` `proposal_status` `docs_ai_settings`
 
-**Handbook.** Read the business profile first, then search, read, write and move pages. Approving pages and publishing a site work only where you've let agents do them; deleting and settings go to you as a request.
-`knowledge_business_profile` `knowledge_business_profile_update` `knowledge_outline` `knowledge_search` `knowledge_read` `knowledge_history` `knowledge_create_page` `knowledge_update_page` `knowledge_move_page` `knowledge_archive_page` `knowledge_create_collection` `knowledge_approve_page` `knowledge_mark_draft` `knowledge_publish_site` `knowledge_take_down_site` `knowledge_request_approval`
+**Handbook.** Read the business profile first, then search, read, write and move pages, start them from templates, archive and restore them, add collections, and set who looks after a page. Approving pages and publishing a site work only where you've let agents do them; deleting and settings go to you as a request.
+`knowledge_business_profile` `knowledge_business_profile_update` `knowledge_outline` `knowledge_search` `knowledge_read` `knowledge_history` `knowledge_save_page` `knowledge_move_page` `knowledge_archive_page` `knowledge_create_collection` `knowledge_page_details` `knowledge_approve_page` `knowledge_publish_site` `knowledge_request_approval`
 
-**Customers.** Find, add and update people and companies, and read website chats and close or reopen them. An agent never deletes a person or company.
-`customers_find_people` `customers_person` `customers_find_companies` `customers_company` `customers_add_person` `customers_update_person` `customers_add_company` `customers_update_company` `customers_chats` `customers_chat` `customers_chat_status`
+**Customers.** Find, add and update people and companies, and see who your mail and meetings found. Read website chats and support email, draft replies to website chats for you to send, and close, reopen or take them. An agent never deletes a person or company.
+`customers_find_people` `customers_find_companies` `customers_save_person` `customers_save_company` `customers_found` `customers_chats` `customers_chat_draft` `customers_chat_status` `support_list` `support_status`
 
 **Forms.** Write and change forms and read the responses. Only a person switches a form on.
-`forms_list` `forms_form` `forms_write` `forms_update` `forms_switch` `forms_answers` `forms_answer`
+`forms_list` `forms_write` `forms_update` `forms_switch` `forms_answers`
 
-**Numbers.** Read sales, ad spend, campaigns, open invoices and bills, and Stripe invoices with their existing payment links. Note what was done to chase a late invoice. An agent can't create or send invoices, move money, or change a store or ad account.
-`numbers_summary` `numbers_daily` `numbers_campaigns` `numbers_source` `numbers_items` `numbers_invoices` `numbers_invoice` `numbers_invoice_note`
+**Numbers.** Read sales, ad spend, campaigns, open invoices and bills, and Stripe invoices with their existing payment links, and, as an owner, refresh a source's figures. Note what was done to chase a late invoice. An agent can't create or send invoices, move money, or change a store or ad account.
+`numbers_summary` `numbers_campaigns` `numbers_source` `numbers_items` `numbers_invoices` `numbers_invoice_note` `numbers_sync`
 
-**Every app at once.** One search across mail, chat, events, files, tasks, customers and Handbook pages, ranked together.
-`mojobase_search`
+**Every app at once.** One search across mail, chat, events, files, tasks, customers and Handbook pages, ranked together. See what needs you and what changed in Activity, and undo a change your agent made.
+`mojobase_search` `mojobase_needs_you` `mojobase_activity` `mojobase_undo`
 
-**Your team.** See who's in the company and, as an owner, invite and remove people, change roles and make invite links. Nobody is emailed an invite until you press Send in Settings.
-`team_list` `team_invite` `team_role` `team_remove` `team_make_link` `team_revoke_link`
+**Your agents.** See your agents in Mojobase, draft a new one for you to set up and switch on, and pause one of yours.
+`agents_list` `agent_draft` `agent_pause`
+
+**Your team.** See who's in the company and, as an owner, invite and remove people, change roles and the apps a member opens, and make invite links. Nobody is emailed an invite until you press Send in Settings.
+`team_list` `team_invite` `team_role` `team_remove` `team_link`
 
 ## What keeps your business safe
 
