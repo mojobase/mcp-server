@@ -100,7 +100,7 @@ More than 115 tools, by app. An app you can't open, or one that's off for your c
 `customers_find_people` `customers_find_companies` `customers_save_person` `customers_save_company` `customers_found` `customers_chats` `customers_chat_draft` `customers_chat_status` `support_list` `support_status`
 
 **Forms.** Write and change forms and read the responses. Only a person switches a form on.
-`forms_list` `forms_write` `forms_update` `forms_switch` `forms_answers`
+`forms_list` `forms_write` `forms_update` `forms_duplicate` `forms_answers`
 
 **Numbers.** Read sales, ad spend, campaigns, open invoices and bills, and Stripe invoices with their existing payment links, and, as an owner, refresh a source's figures. Note what was done to chase a late invoice. An agent can't create or send invoices, move money, or change a store or ad account.
 `numbers_summary` `numbers_campaigns` `numbers_source` `numbers_items` `numbers_invoices` `numbers_invoice_note` `numbers_sync`
