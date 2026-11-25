@@ -11,10 +11,9 @@ Ask "which customers owe us money, and what did we last tell them?" and your age
 > [!IMPORTANT]
 > **You need a Mojobase account.** Mojobase is invite-only for now: [request a founding spot](https://mojobase.ai/signup?utm_source=github&utm_campaign=mcp-listing).
 
-- **Address for claude.ai and ChatGPT:** `https://app.mojobase.ai/mcp/<your company>`, shown in Mojobase under Settings → Connect an agent
-- **Address for a key:** `https://app.mojobase.ai/mcp`
+- **Address:** `https://app.mojobase.ai/mcp`, for claude.ai, ChatGPT and keys alike, shown in Mojobase under Agents → Connected
 - **Transport:** Streamable HTTP
-- **Sign-in:** your Mojobase account, or a key sent as a Bearer token
+- **Sign-in:** your Mojobase account (in more than one company, you pick which as you sign in), or a key sent as a Bearer token
 - **Price:** included in every Mojobase plan, and agents never take a seat
 
 ## Who it's for
@@ -23,11 +22,11 @@ Owners and teams who run their business in Mojobase and want their own AI to do 
 
 ## Connect
 
-Start in Mojobase: **Settings → Connect an agent**. It shows your company's address and makes keys. A key is shown once, and you can switch it off at any time.
+Start in Mojobase: **Agents → Connected**. It shows the address and makes keys. A key is shown once, and you can switch it off at any time. In more than one company? You pick which as you sign in, and each company's own address is there too, to connect a second at the same time.
 
 ### claude.ai and Claude Desktop
 
-1. Copy your company's address from Settings → Connect an agent.
+1. Copy the address from Agents → Connected.
 2. In Claude, open Customize → Connectors, click **+ Add**, then **Add custom connector**.
 3. Name it Mojobase, paste the address and click **Continue**.
 4. Sign in with your Mojobase account and allow access.
@@ -36,7 +35,7 @@ On Team and Enterprise plans, an owner adds the connector in Organization settin
 
 ### ChatGPT
 
-1. Copy your company's address from Settings → Connect an agent.
+1. Copy the address from Agents → Connected.
 2. Go to [chatgpt.com/plugins](https://chatgpt.com/plugins), select **+**, then **Add custom MCP server**.
 3. Name it Mojobase and paste the address under Connection.
 4. Create it, then sign in with your Mojobase account when asked. In a chat, type @ and pick Mojobase.
@@ -73,7 +72,7 @@ Add Mojobase to `~/.cursor/mcp.json`, or to `.cursor/mcp.json` in a project:
 
 ### Any other MCP client
 
-Use `https://app.mojobase.ai/mcp` over Streamable HTTP with the header `Authorization: Bearer YOUR_KEY`. A client that signs in with OAuth can use your company's address instead. Each request gets one JSON answer.
+Use `https://app.mojobase.ai/mcp` over Streamable HTTP with the header `Authorization: Bearer YOUR_KEY`. A client that signs in with OAuth uses the same address, without the header. Each request gets one JSON answer.
 
 ## What your agent can do
 

@@ -3,7 +3,7 @@
   "name": "ai.mojobase/mojobase",
   "title": "Mojobase",
   "description": "One MCP server for your whole business: email, chat, calendar, tasks, files, customers and numbers.",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "websiteUrl": "https://mojobase.ai/mcp?utm_source=mcp-registry&utm_campaign=mcp-listing",
   "repository": {
     "url": "https://github.com/mojobase/mcp-server",
@@ -21,22 +21,12 @@
   "remotes": [
     {
       "type": "streamable-http",
-      "url": "https://app.mojobase.ai/mcp/{company}",
-      "variables": {
-        "company": {
-          "description": "Your company's id, the end of its address in Mojobase: Settings → Connect an agent. You sign in with your Mojobase account when you connect.",
-          "isRequired": true
-        }
-      }
-    },
-    {
-      "type": "streamable-http",
       "url": "https://app.mojobase.ai/mcp",
       "headers": [
         {
           "name": "Authorization",
-          "description": "A key you make in Mojobase: Settings → Connect an agent.",
-          "isRequired": true,
+          "description": "A key you make in Mojobase: Agents → Connected. Leave it out to sign in with your Mojobase account instead, picking the company as you do.",
+          "isRequired": false,
           "isSecret": true,
           "value": "Bearer {key}",
           "variables": {
